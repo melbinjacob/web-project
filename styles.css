@@ -64,18 +64,18 @@
     }
 
     .text-div{
-        width: 700px;
-        height: 300px;
+        width: 500px;
+        height: 400px;
         padding: 60px;
         background-color:rgba(255, 255, 255, 0.411);
         z-index: 2;
         border-radius: 25px;
-        transition: all 400ms ease-in-out;
+        transition: all 600ms ease-in-out;
     }
     
     .text-div:hover{
         background-color:rgba(255, 255, 255, 0.611);
-        width: 52vh;
+        width: 830px;
     }
 
     .div-blur{
@@ -94,9 +94,9 @@
 
     .text-div p{
         font-family: 'Poppins', sans-serif;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 500;
-        margin-top: 24px;
+        margin-top: 44px;
     }
 
     .img-div{
