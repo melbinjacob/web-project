@@ -218,7 +218,7 @@
     }
 
     .text-div{
-        width: 100%;
+        width: 80%;
         height: 100%;
         text-align: center;
         display: flex;
@@ -239,7 +239,7 @@
     }
 
     .text-div h1{
-        font-size: 44px;
+        font-size: 38px;
         margin-top: 130px;
     }
 
@@ -255,7 +255,7 @@
         right: 0px;
         left: auto;
         right: auto;
-        top: 260px;
+        top: 280px;
     }
 
     .company-main-div{
@@ -265,18 +265,19 @@
     }
 
     .trust-txt{
-        font-size: 14px;
+        font-size: 12px;
         position: relative;
         top: 20px;
-        color: #fff;
-        font-weight: 400;
+        color: rgb(4, 41, 0);
+        font-weight: 600;
     }
 
     .company-img{
-        width: 80px;
+        width: 100px;
         height: auto;
-        margin: 0;
-        fill: #ffffff;
+        margin: auto;
+        align-items: center;
+        fill: #fff;
     }
     
     .deals-div{
