@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Poppins:wght@400;500&display=swap');
+:root{
+        --font-color: #39852d;
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-container{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 4;
+        background-color: #fff;
+    }
+
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .header-branding{
+        color: var(--font-color);
+        font-family: 'El Messiri', sans-serif;
+        margin-left: 60px;
+    }
+
+    .header-li{ 
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .header-li li{
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
+
+    .header-icons{
+        margin-right: 60px;
+    }
+
+    .fa-magnifying-glass, .fa-bars{
+        font-size: 28px;
+        color: black;
+        margin-left: 60px;
+    }
+
+    /*Home section*/
+    .main-div{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        z-index: -1;
+    }
+
+    .text-div{
+        width: 50vh;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        padding: 40px;
+        background-color:rgba(255, 255, 255, 0.411);
+        z-index: 2;
+        border-radius: 25px;
+        transition: all 400ms ease-in-out;
+    }
+    
+    .text-div:hover{
+        background-color:rgba(255, 255, 255, 0.611);
+        width: 52vh;
+    }
+
+    .div-blur{
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter:blur(20px);
+        z-index: 2;
+    }
+
+    .text-div h1{
+        font-family: 'El Messiri', sans-serif;
+        font-size: 74px;
+        line-height: 1;
+        margin-bottom: 0;
+        color: var(--font-color);
+    }
+
+    .text-div p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 0;
+    }
+
+    .img-div{
+        width: 100vh;
+        height: auto;
+        position: relative;
+        right: 160px;
+        border-radius: 25px;
+        z-index: 1;
+    }
+    
+    /*Companys Section*/
+
+    .company-main-div{
+        width: 100%;
+        height: 250px;
+        background-color: #b9d2b5;
+    }
+
+    #company-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trust-txt{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        top: 50px;
+        color: #000;
+    }
+
+    .company-img{
+        margin-top: 30px;
+        width: 200px;
+        height: auto;
+        fill: #256f19;
+    }
+
+    /* Deals section*/
+    .deals-div{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .deal-text {
+        width: 200px;
+        height: auto;
+    }
+    
+    .deal-text:first-child{
+        width: 300px;
+    }
+
+    .deal-text h1{
+        font-family:'El Messiri', sans-serif;
+        color: var(--font-color);
+        font-size: 48px;
+        max-lines: 2;
+        line-height: 1;
+        margin: 0;
+
+    }
+    
+    .second-line{
+       margin-top: 0;
+    }
+    .fa-fire{
+        color: orange;
+    }
+
+    .deal-text h2, p {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #deal-icons{
+        font-size: 44px;
+    }
