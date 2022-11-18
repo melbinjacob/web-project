@@ -193,7 +193,7 @@
     }
     .header-branding{
         font-size: 28px;
-        margin-left: 12px;
+        margin-left: 24px;
         color: rgb(255, 255, 255);
     }
     .li-hide {
@@ -203,9 +203,10 @@
     #header-icon-id{
         font-size: 24px;
         color: white;
+        margin: 0 20px 0 0;
     }
     #header-icon-id:nth-child(2){
-        margin-right: 44px;
+        margin-right: -18px;
     }
     .main-div{
         width: 100%;
