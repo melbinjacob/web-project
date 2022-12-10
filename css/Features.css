@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Poppins:wght@400;500&display=swap');
+
+.ft-box-ha-cont{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.ft-ha-div{
+    position: relative;
+    top: 3cm;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+}
+
+.ft-ha-div > h1{
+    font-family: 'El Messiri', sans-serif;
+    font-weight: bolder;
+    font-size: 58px;
+    margin: 0;
+}
+
+.ft-ha-div > h1:nth-of-type(2){
+    font-size: 20px;
+    margin-top: -24px;
+}
+
+.ft-box-cont{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ft-box-div{
+    width: 20%;
+    height: 60%;
+    border-radius: 25px;
+    background-color: #b9d2b5;
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 200ms ease;
+}
+
+.ft-box-div:hover{
+    background-color: #83a67e;
+}
+
+.ft-box-img{
+    width: 80%;
+    height: auto;
+}
+
+.ft-box-div > h1{
+    font-family: 'El Messiri', sans-serif;
+    margin: 20px 0 0 0;
+}
+.ft-box-div > p{
+    font-size: 14px;
+    width: 80%;
+}
+
+@media screen and (max-width:425px) {
+    body{
+        background-color: #b9d2b5;
+    }
+    .ft-box-ha-cont{
+        background-color: #b9d2b5;
+    }
+    .ft-box-cont{
+        flex-direction: column;
+        width: 100%;
+        background-color: #b9d2b5;
+    }
+    .ft-box-div:nth-child(1){
+        margin-top: 18cm;
+    }
+    .ft-box-div{
+        width: 100%;
+        margin-top: 2cm;
+    }
+}
