@@ -15,20 +15,21 @@
 <body>
 
     <!-- Header section && Stylesheet for header section == styles.css -->
-    <header class="header-element">
-        <div class="header-container">
-            <a href="index.html"><h1 class="header-branding">furni.shop</h1></a>
-            <ul class="header-li li-hide">
-                <a class="li-hide" href="index.html"><li class="li-hide">Home</li></a>
-                <a class="li-hide" href="About.html"><li class="li-hide">About</li></a>
-                <a class="li-hide" href="Features.html"><li class="li-hide">Features</li></a>
-                <a class="li-hide" href="#"><li class="li-hide">Contact</li></a>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#'><h1>furni.shop</h1></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">About</a></li>
+                    <li><a href="Features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
-            <div class="header-icons">
-            <i class="fa-solid fa-magnifying-glass" id="header-icon-id"></i>
-            <i class="fa-solid fa-bars" id="header-icon-id"></i>
-            </div>
-        </div>
+        </nav>
     </header>
     <!-- ****End of header section**** -->
 

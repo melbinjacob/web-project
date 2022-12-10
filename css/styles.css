@@ -10,48 +10,137 @@
         padding: 0;
     }
 
-    .header-container{
+    @import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Poppins:wght@400;500&display=swap');
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        font-family: "Poppins", sans-serif;
+        --color1: #35852d;
+        --color2: #fff;
+    }
+    
+    .nav-bar{
         width: 100%;
-        height: 80px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: space-between;
-        position: fixed;
-        z-index: 4;
-        background-color: #fff;
-    }
-
-    a{
-        text-decoration: none;
-        color: #000;
-    }
-
-    .header-branding{
-        color: var(--font-color);
-        font-family: 'El Messiri', sans-serif;
-        margin-left: 60px;
-    }
-
-    .header-li{ 
-        width: 40%;
-        display: flex;
-        justify-content: space-between;
         list-style: none;
+        position: relative;
+        background-color: var(--color2);
+        padding: 24px 40px;
+        position: fixed;
+        z-index: 100;
+    }
+    .logo a{
+        text-decoration: none;
+        color: var(--color1);
+        font-family: 'El Messiri', sans-serif;
+    }
+    .menu{
+        display: flex;
+    }
+    
+    .menu li{
+        padding-left: 30px;
+    }
+    
+    .menu li a{
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        color: #000;
+        transition: 0.15ms ease-in-out;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 600;
     }
 
-    .header-li li{
-        font-family: 'Poppins', sans-serif;
-        font-weight: bold;
+    .menu li{
+        margin-right: 3cm;
     }
-
-    .header-icons{
-        margin-right: 60px;
+    
+    .menu li a ::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--color1);
+        transition: 0.15ms ease-in-out;
     }
-
-    #header-icon-id{
-        font-size: 28px;
-        color: black;
-        margin-left: 60px;
+    .menu li a :hover ::after{
+        width: 100%;
+    }
+    
+    .open-menu, .close-menu{
+        position: absolute;
+        color: var(--color1);
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: none;
+    }
+    
+    .open-menu{
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    
+    .close-menu{
+        top: 20px;
+        right: 20px;
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    @media(max-width: 610px){
+        .nav-bar{
+            background-color: #35852d;
+            padding: 12px 24px;
+        }
+        .logo a{
+            color: var(--color2);
+        }
+        .menu{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            z-index: 100;
+            background-color: var(--color2);
+            transition: all 20ms ease-in-out;
+            overflow: hidden;
+        }
+        .menu li {
+            margin-top: 40px;
+            margin-right: 0;
+            background-color: var(--color2);
+        }
+        .menu li a{
+            padding: 10px;
+            background-color: var(--color2);
+        }
+        .open-menu, .close-menu{
+            display: block;
+            color: var(--color2);
+        }
+        .close-menu{
+            color: var(--color1);
+        }
+        #check:checked ~ .menu{
+            right: 0;
+        }
     }
 
     /*Home section*/
@@ -185,31 +274,7 @@
     */
 @media screen and (max-width: 425px){
 
-    div.header-container{
-        position: fixed;
-        width: 100%;
-        height: 80px;
-        background-color: #256f19;
-        display: flex;
-    }
-
-    .header-branding{
-        font-size: 28px;
-        margin-left: 24px;
-        color: rgb(255, 255, 255);
-    }
-
-    .li-hide {
-        display: none;
-        visibility: hidden;
-    }
-
-    #header-icon-id{
-        font-size: 28px;
-        color: #fff;
-        margin-right: -20px;
-    }
-
+   
     .main-div{
         height: 700px;
         flex-direction: column;
@@ -282,16 +347,12 @@
     .deals-div{
         flex-direction: column;
         position: relative;
-        top: 8cm;
-    }
-
-    .deal-text h2{
-        margin-bottom: -8px;
+        top: 6cm;
     }
 
     #deal-icons{
         font-size: 30px;
         margin-top: 30px;
-        margin-bottom: -12px;
     }
+
 }
