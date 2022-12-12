@@ -90,4 +90,7 @@
         width: 100%;
         margin-top: 2cm;
     }
+    .ft-box-div:hover{
+        background-color: #b9d2b5;
+    }
 }
